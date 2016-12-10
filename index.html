@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Rocks Paper Scissor Game</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <style>
+  h1 {
+    text-align: center;
+  }
+    #name-entry {
+      margin: 0 auto;
+      text-align: center;
+    }
+    #the-game div {
+      height: 200px;
+      border: 1px solid black;
+      margin: 2em 0;
+    }
+    #chat-window {
+      margin-left: auto;
+      margin-right: auto;
+      width: 70%;
+      text-align: center;
+    }
+    #chat-container {
+      height: 200px;
+      border: 1px solid black;
+    }
+      
+      
+  </style>
+</head>
+<body>
+  <div class="container">
+	<h1>Rocks Paper Scissor</h1>
+
+	<div id="name-entry">
+		<input placeholder="Name" id="name-input" type="text">
+		<button id="add-user">Start</button>
+	</div>
+
+	<div id="the-game" class="row">
+		<div id="player-one" class="col-sm-4"><p>Waiting for Player 1</p></div>	
+    <div id="player-scores" class="col-sm-4"></div>	
+		<div id="player-two" class="col-sm-4"><p>Waiting for Player 2</p></div>
+	</div>
+
+	<div id="chat-window" class="row">
+    <div id="chat-container"></div>
+    <input id="chat-input" type="text"">
+    <button id="add-chats">Send</button>
+	</div>
+
+	<div id="full-member-list"></div>
+  </div>
+<script src='https://code.jquery.com/jquery-3.1.1.min.js'></script>
+<script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
+
+
+
